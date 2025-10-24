@@ -1,43 +1,33 @@
-/*
-import React from 'react'
+import React from 'react';
 
 const Home: React.FC = () => (
-  <section className="page home">
-    <div className="container">
-    <h1>Manthan Thool</h1>
-  <h2>UI/UX Designer</h2>
-  
-  <p>UI Designer At Tolet Globe 
-    | Media Manager At FolkLok Studio
-  </p>
-    </div>
-  </section>
-)
-
-
-
-export default Home
-*/
-
-import React from 'react'
-
-const Home: React.FC = () => (
-  <section className="page home">
-    <div className="container home-content">
+  <div className="container">
+    <div className="home-content">
       <div className="text-block">
-        <h1>Manthan Thool</h1>
-  <h2>UI/UX Designer</h2>
-  
-  <p>UI Designer At Tolet Globe 
-    | Media Manager At FolkLok Studio
-  </p>
+        <h1 style={{ marginBottom: 12, fontSize: '2rem', fontWeight: 900, color: '#283593' }}>
+          Think. Feel. Create.
+        </h1>
+        <p style={{ color: '#475569', marginBottom: 16 }}>
+          Great design starts with empathy. I think deeply about people and craft experiences that feel intuitive, joyful, and real.
+        </p>
+        <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+          <a href="/portfolio" className="project-link" style={{ textDecoration: 'none' }}>
+            View Projects →
+          </a>
+          <a href="/about" className="project-link" style={{ textDecoration: 'none' }}>
+            About Me
+          </a>
+        </div>
       </div>
-
       <div className="image-block">
-        <img src="/profile.jpg" alt="My Photo" className="profile-img" />
+        <img
+          src="/profile.jpg"
+          alt="Profile"
+          className="profile-img"
+        />
       </div>
     </div>
-  </section>
-)
+  </div>
+);
 
-export default Home
+export default Home;
