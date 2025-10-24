@@ -240,3 +240,36 @@ h1, h2, p, a {
   color: #111; /* dark text for contrast */
 
 }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ensures full viewport height */
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
+}
+
+.app-main {
+  flex: 1; /* pushes footer to the bottom */
+}
