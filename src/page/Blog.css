@@ -1,0 +1,101 @@
+.blog-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0ecff 0%, #fff 50%, #f9e0ff 100%);
+  padding: 32px 8px;
+}
+.blog-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #363b8c;
+  margin-bottom: 2rem;
+}
+.blog-form-card {
+  max-width: 500px;
+  background: #fff;
+  margin: 0 auto 3rem auto;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 16px rgba(44, 56, 131, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.blog-input,
+.blog-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid #aeb6f8;
+  transition: border 0.2s;
+  margin-bottom: 10px;
+}
+.blog-input:focus,
+.blog-textarea:focus {
+  border-color: #7955f0;
+  outline: none;
+}
+.blog-button {
+  background: linear-gradient(90deg, #7955f0 0%, #5b95ff 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.8rem 0;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.blog-button:hover {
+  background: linear-gradient(90deg, #5b95ff 0%, #7955f0 100%);
+}
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 32px;
+}
+.blog-card {
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 16px rgba(44, 56, 131, 0.10);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.blog-card:hover {
+  box-shadow: 0 6px 28px rgba(44,56,131,0.12);
+  transform: scale(1.03);
+}
+.blog-image {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+.blog-card-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.blog-card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2856A7;
+  margin-bottom: 0.25rem;
+}
+.blog-card-date {
+  color: #aeb6f8;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+.blog-card-summary {
+  color: #4a4a53;
+  line-height: 1.5;
+}
+.blog-empty {
+  grid-column: 1/-1;
+  text-align: center;
+  color: #888;
+  font-size: 1.15rem;
+}
