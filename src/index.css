@@ -115,24 +115,12 @@ h1, h2, p, a { color: #111; }
 .project-link { margin-top: auto; color: #4f46e5; font-weight: 700; text-decoration: none; }
 .project-link.disabled { color: #94a3b8; font-weight: 600; pointer-events: none; }
 
-/* Footer — choose ONE mode */
-
-/* A) Natural footer (recommended) */
+/* Footer  choose ONE mode */
 .site-footer {
   text-align: center; padding: 1rem; border-top: 1px solid #e6eef8;
   margin-top: 2rem; background: rgba(255,255,255,0.85);
 }
 
-/* B) Fixed sticky footer (enable and keep .page bottom padding 72px) */
-/*
-.site-footer {
-  position: fixed; left: 0; bottom: 0; width: 100%;
-  background: #18181b; color: #fff; text-align: center; padding: 12px 0;
-  z-index: 9999; box-shadow: 0 -2px 16px rgba(0,0,0,0.08);
-}
-*/
-
-/* Responsive tweaks */
 @media (max-width: 600px) {
   .nav { padding: 1rem; }
   .container { padding: 1rem; }
